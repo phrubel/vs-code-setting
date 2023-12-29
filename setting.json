@@ -1,0 +1,105 @@
+{
+  "editor.fontFamily": "'Operator Mono Lig',Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.fontSize": 17,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 15,
+  "editor.guides.bracketPairs": "active",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  //harsh sir
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "editor.formatOnSave": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": 0.2,
+  //color customization
+  "workbench.colorCustomizations": {
+    //for editor
+    "activityBar.background": "#172a45",
+    "tab.inactiveBackground": "#172a45",
+    "editorGroupHeader.tabsBackground": "#172a45",
+
+    "sideBarSectionHeader.background": "#132337",
+    "minimap.background": "#132337",
+    "sideBar.background": "#132337",
+
+    "tab.activeBackground": "#122032",
+    "editor.background": "#122032",
+    "panel.background": "#122032",
+
+    "tab.activeBorderTop": "#ff0000",
+    "tab.border": "#b8b6b65d",
+    "terminal.border": "#b8b6b65d",
+    "sideBar.border": "#b8b6b65d",
+    "list.focusOutline": "#79797975",
+    "list.hoverBackground": "#79797975",
+    "list.inactiveSelectionBackground": "#79797975",
+    "list.activeSelectionBackground": "#79797975",
+    "sideBarSectionHeader.foreground": "#fff",
+    "scrollbarSlider.background": "#75757579",
+    "scrollbarSlider.hoverBackground": "#75757579",
+    "statusBar.background": "#040424",
+    "editorCursor.foreground": "#ffee00",
+    "editor.lineHighlightBackground": "#263b5b",
+    "editorLineNumber.activeForeground": "#fff",
+    // for terminal color
+    "terminal.background": "#122032",
+    "terminalCursor.foreground": "#ffee00",
+    "terminal.ansiBrightWhite": "#008fc3"
+  },
+  //editor font setting
+  "editor.tokenColorCustomizations": {
+    "comments": "#7a7a7a",
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "entity.name.type.class", //class names
+          "keyword", //import, export, return…
+          "constant", //String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "storage.type", //var let const
+          "entity.other.attribute-name", // attribute name & classname
+          "emphasis" // this for !
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          //following will be excluded from italics (VSCode has some defaults for italics)
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json",
+          "storage.type.function.arrow"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  }
+}
